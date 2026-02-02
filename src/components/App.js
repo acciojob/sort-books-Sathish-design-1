@@ -1,13 +1,16 @@
 
 import React from "react";
-import './../styles/App.css';
+import SortDropdown from "./SortDropdown";
+import OrderDropdown from "./OrderDrodown";
+import BookList from "./BookList";
 
-const App = () => {
+export default function App() {
   return (
-    <div>
-        {/* Do not remove the main div */}
-    </div>
-  )
+    <>
+      <SortDropdown />
+      <OrderDropdown />
+      <BookList />
+    </>
+  );
 }
 
-export default App
